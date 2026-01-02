@@ -1,3 +1,32 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Blog content styling */
+  .prose img {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1.5rem 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid #CBD5E1; /* slate-300 */
+    padding-left: 1rem;
+    color: #475569; /* slate-700 */
+  }
+
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .prose th,
+  .prose td {
+    border: 1px solid #E2E8F0; /* slate-200 */
+    padding: 0.5rem 1rem;
+  }
+}
